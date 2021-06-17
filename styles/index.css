@@ -1,0 +1,78 @@
+.contenedor-principal{
+	display: flex;
+	flex-direction: column;
+
+	/* este de aqui centra horizontalmente */
+	align-items: center;
+
+	/* este de aqui centra verticalmente */
+	justify-content: center;
+}
+
+/* adentro de cover esta el avatar*/
+#cover{
+	height:400px;
+	width: 800px;
+	background-image: url('../imgs/cover.jpg');
+	background-position:center;
+	background-size: cover;
+	background-repeat: no-repeat;
+
+	position: relative;
+
+	/*centran el avatar horizontalmente*/
+	display: flex;
+	justify-content: center;
+
+}
+
+#avatar{
+
+	/*Taamaños y color de fondo*/
+	height: 200px;
+	width: 200px;
+	background-color: gray;
+
+	/* de aqui sirve para que laa imagen se adapte como background del div*/
+	border-radius: 50%;
+	background-image: url('../imgs/avatar.jpeg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	/* hasta aca */
+
+	/* posicionaar la imagen dentro de dos divs*/
+	position: absolute;
+	bottom: -70px; /*valor negativo para posicionar a la mitad de 2 divs*/
+	z-index: 2; /* la importancia, todos empiezan en 1, pone arriba el que tenga el mayor valor*/
+
+	/* fin posicionaar la imagen dentro de dos divs*/
+	
+	/* Borde tipo historia de instagram*/
+	border: 3px solid #42EB00;
+
+}
+
+#back{
+	position: absolute;
+	right: 15px;
+	bottom: -20px;
+	z-index: 2;
+	background-color: blue;
+	padding: 10px;
+}
+
+#back a{
+	color: white;
+	text-decoration: none;
+}
+
+
+
+#contenido{
+	height:800px;
+	width: 800px;
+	background-color: pink;
+	position: relative;
+}
+
