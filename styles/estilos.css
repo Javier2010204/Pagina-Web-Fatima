@@ -37,6 +37,12 @@ html, body{
     height: 250px;
     width: 300px;
     min-width: 100%;
+    background-image: url("https://www.guatemala.com/fotos/201709/La-Estancia-1-885x500.jpg");
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    background-color: rgb(90,90,90);
+    background-blend-mode:soft-light;
 }
 
 .contenedor-imagen img{
@@ -74,6 +80,45 @@ html, body{
          text-decoration:underline;
     */
 
+}
+
+#contenedor-iconos{
+    /*
+        1. darle padding  
+        2. centrar los elementos
+        3. ponerlos horizontalmente
+    */
+
+    padding: 10px 15px;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+
+/*
+    1. poner contenido en fila
+    2. ponerle altura a los elementos
+    3. darle espacio entre elementos 
+*/
+
+#div-iconos{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.contenido-iconos{
+    height: 50px;
+    width: 50px;
+    padding: 15px;
+}
+
+.precio{
+    position: absolute;
+    bottom: 15px;
+    right:10px;
+    color: #fff;
+    font-size: 40px;
 }
 
 /*
@@ -122,5 +167,16 @@ html, body{
 
     /* 50% hace un circulo -> importante el ancho y alto tienen que ser iguales*/
     border-radius: 5px;
+}
+
+/* Clases de utilidad */
+
+/* Esta clase quita los margenes*/
+.no-margen{
+    margin: 0px;
+}
+
+.margin-top{
+    margin-top:1em;
 }
 
