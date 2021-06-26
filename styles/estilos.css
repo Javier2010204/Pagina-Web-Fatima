@@ -22,7 +22,7 @@ html, body{
         1. centrado horizontal y vertical (en flex las propiedades van en el padree)
         2. Alto y ancho definidos
     */
-    height: 700px;
+    height: 95vh;
     width: 400px;
     background-color: #EBEBEB;
 }
