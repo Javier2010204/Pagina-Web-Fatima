@@ -1,0 +1,64 @@
+body{
+    margin: 0;
+    background-color: gray;
+}
+
+.contenedor{
+    height:100vh;
+    display: flex;
+    justify-content:center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    padding: 15px;
+}
+.cuadrado{
+    width: 80%;
+    height: 200px;
+    margin-top: 1em;
+}
+
+.amarillo{
+    background-color: yellow;
+}
+
+.celeste{
+    background-color:aqua;
+}
+
+.anaranjado{
+    background-color: orangered;
+}
+
+.rosado{
+    background-color: pink;
+}
+
+@media only screen and (min-width: 768px){
+    body{
+        background-color:blue;
+    }
+
+    .contenedor{
+        align-content: flex-start;
+    }
+
+    .cuadrado{
+        width: 45%;
+        margin-right: 0.5em;
+    }
+
+
+}
+
+@media only screen and (min-width:1024px){
+    body{
+        background-color: green;
+    }
+
+    .cuadrado{
+        width: 30%;
+        margin-right: 0.5em;
+    }
+}
+
